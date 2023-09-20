@@ -4,3 +4,6 @@ Left click to shoot!
 
 Possible issue:
 If next level doesn't load/no enemies are spawning, just Alt+F4 exit the game and try again (??)
+
+Lorem Ipsum: In Space by Gabe Williams
+Github Repository link: https://github.com/GabingIn3D/VS-EpicBulletHell
