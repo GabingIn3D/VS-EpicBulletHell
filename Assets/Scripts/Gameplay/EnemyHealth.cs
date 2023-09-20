@@ -30,13 +30,14 @@ public class EnemyHealth : MonoBehaviour
             }
             variables.enemiesPresent -= 1;
             variables.WaveCheck();
+            print(variables.enemiesPresent + " are present. " + this.gameObject.name + " has been defeated.");
             Destroy(this.gameObject);
         }
     }
 
     public void OnHit()
     {
-        print("Enemy -1 HP/" + enemyCurrentHP + "/" + enemyTotalHP);
+        // print("Enemy -1 HP/" + enemyCurrentHP + "/" + enemyTotalHP);
         enemyCurrentHP -= 1;
         // trigger hit animation
     }

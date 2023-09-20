@@ -13,6 +13,8 @@ public class PersistentManager : MonoBehaviour
     // The score. Enemies, upon death, should add to the score.
     public int totalScore = 0;
 
+    public bool musicBegun;
+
     // Individual level scores.
     public int[] levelScores = new int[3];
 

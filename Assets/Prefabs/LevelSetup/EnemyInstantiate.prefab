@@ -148,6 +148,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ee929c0672051e2439e8d928add2d220, type: 2}
     - {fileID: 11400000, guid: 5e2652da2fe40164fbff4946be26ea7e, type: 2}
     - {fileID: 11400000, guid: c6cba05b4deedd74cb5119076b4f7233, type: 2}
+    - {fileID: 11400000, guid: ce14dd99989766a4ca74ae1016d2a3f6, type: 2}
+    - {fileID: 11400000, guid: 335ac3609bf706346a9fe21f00a6f384, type: 2}
+    - {fileID: 11400000, guid: 782abc44feb37e84a8fa897ab0a25077, type: 2}
+    - {fileID: 11400000, guid: 295b3a431cd01b0479a6509c2e354e79, type: 2}
+    - {fileID: 11400000, guid: 2503da22c296b1244ac06dc17b5f3c31, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -243,6 +248,100 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnGenericEnemyStop
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnGenericEnemyStop
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnGenericEnemyStop
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnHardEnemy2
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnHardEnemy2
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SpawnHardEnemy2
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 24103222078032944}
+          m_TargetAssemblyTypeName: EnemyInstantiate, Assembly-CSharp
+          m_MethodName: SetSpawnBool
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &24103222078032944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,5 +358,7 @@ MonoBehaviour:
   enemySpawnPoint_lane2: {fileID: 24103221704126596}
   enemySpawnPoint_lane3: {fileID: 24103221484927300}
   GenericEnemy: {fileID: 4004305009808453104, guid: 1c361e56cc9685746a5c0c1eaeeface6, type: 3}
+  GenericEnemyStop: {fileID: 4004305009808453104, guid: e65c537476766964dba8e885bac61da4, type: 3}
   HardEnemy: {fileID: 4004305009808453104, guid: 49b04eed1a9c84047b183ecde0bbb1f8, type: 3}
+  HardEnemy2: {fileID: 4004305009808453104, guid: 14fb0c34e612a4149bc9e940be63cfe5, type: 3}
   variables: {fileID: 0}

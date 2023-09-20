@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
         gameOverScreen.SetActive(true);
         health.SetActive(false);
         Time.timeScale = 0;
+        Cursor.visible = true;
         
     }
 

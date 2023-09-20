@@ -49,6 +49,7 @@ public class MoveEnemy : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
         var variables = FindObjectOfType<CheckVariables>();
         variables.enemiesPresent -= 1;
+        print(variables.enemiesPresent + " are present. " + this.gameObject.name + " has died off-screen.");
         variables.WaveCheck();
     }
 

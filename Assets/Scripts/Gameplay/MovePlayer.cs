@@ -5,12 +5,13 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     public CharacterController characterController;
-    public float speed = 6;
+    public float speed;
     public bool firstMove;
+    public CheckVariables variables;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        variables = FindObjectOfType<CheckVariables>().GetComponent<CheckVariables>();
     }
 
     // Update is called once per frame
@@ -38,7 +39,8 @@ public class MovePlayer : MonoBehaviour
         {
             var playerScript = GetComponent<HealthDisplay>();
             playerScript.Damage();
-            print("Player has collided with enemy.");
+            variables.enemiesPresent -= 1;
+            print("Player has collided with enemy. " + variables.enemiesPresent + " enemies remain.");
             Destroy(other.gameObject);
         }
     }

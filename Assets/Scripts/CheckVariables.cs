@@ -30,10 +30,11 @@ public class CheckVariables : MonoBehaviour
     public int totalSpawnWaves;
     public int currentSpawnWave;
 
+    public bool isEnemySpawned;
     public int enemiesPresent = 1;
     public int scoreToClearifDie;
     public GameObject[] waves;
-    bool wave2trip;
+    public bool wave2trip;
 
 
     void Awake()
@@ -105,7 +106,7 @@ public class CheckVariables : MonoBehaviour
     public void WaveCheck()
     {
         // Next Level
-        if (enemiesPresent <= 0)
+        if (enemiesPresent <= 0 && isEnemySpawned)
         {
             currentSpawnWave += 1;
             if (currentSpawnWave > totalSpawnWaves)
@@ -123,6 +124,7 @@ public class CheckVariables : MonoBehaviour
                 var wave2 = waves[0].gameObject.GetComponent<PlayableDirector>();
                 wave2.Play();
                 wave2trip = true;
+                print("Wave 2 has begun. bool 'wave2trip' is true.");
             }
             // Call function to instantiate next Timeline prefab which instantiates more enemies
             // + a script attached that will automatically tell CheckVariables.cs the new # of enemies present.

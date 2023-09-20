@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HealthDisplay : MonoBehaviour
 {
-    public int maxHealth = 10;
+    public int maxHealth;
     public int currentHealth;
     private int damage = 1;
 
@@ -36,9 +36,9 @@ public class HealthDisplay : MonoBehaviour
             gameOver.SetGameOver();
         }
 
-        if (currentHealth >= 10)
+        if (currentHealth >= maxHealth)
         {
-            currentHealth = 10;
+            currentHealth = maxHealth;
             healthBar.SetHealth(currentHealth);
         }
 

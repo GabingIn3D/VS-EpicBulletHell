@@ -8,6 +8,7 @@ public class FreezeTime : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
