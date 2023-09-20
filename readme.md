@@ -3,7 +3,7 @@ Mouse movement left and right to control ship.
 Left click to shoot!
 
 Possible issue:
-If next level doesn't load/no enemies are spawning, just Alt+F4 exit the game and try again (??)
+There may be a bug in the original build version that causes the game to soft-lock if the player collides with an enemy. This is fixed in the LateDayOnePatch version!
 
 Lorem Ipsum: In Space by Gabe Williams
 Github Repository link: https://github.com/GabingIn3D/VS-EpicBulletHell
